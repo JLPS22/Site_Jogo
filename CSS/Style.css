@@ -9,6 +9,7 @@ header{border: 2px solid black;
 background-image: url(soldado\ em\ movimento2.gif);
 }
 div{text-align: center;
+    
 color: white;
 }
 h2{color: white;
@@ -28,5 +29,5 @@ background-color: gray;
     height: 100px;
     font-size: 30px;
 }
-p{font-size: larger;
-font: arial;}
+p{font-size: ;
+font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif}
