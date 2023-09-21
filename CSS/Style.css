@@ -3,15 +3,14 @@ h1{
     font-size:xx-large;    
 }
     
-h1::first-letter{color: blue;}
-    
 nav{color: white;}
     
-header{border: 2px solid black;
+header{
+    border: 2px solid black;
     width: auto;padding: auto;margin: auto;
     background-color: rgba(255, 0, 0, 0.788);
     text-align: center;    
-    }
+}
 
 div{
     text-align: center;    
@@ -27,12 +26,14 @@ section{
     border: 2px solid black;
 }
 
-.flex-container{  display: flex;
+.flex-container{  
+    display: flex;
     flex-flow: row wrap;
     background-color: gray;
 }
 
-.flex-container>div{ background-color: #f1f1f1;
+.flex-container>div{ 
+    background-color: #f1f1f1;
     width: 100px;
     margin: 10px;
     text-align: center;
@@ -78,4 +79,30 @@ footer{
     display: flex;
     align-items: center;
     justify-content: center;
-}   
+}
+
+
+
+/* Parte do Call of Duty */
+
+.container {
+    position: relative;
+}
+
+#imagem {
+    position:relative;
+    text-align: center;
+}
+
+#texto {
+    position: absolute;
+    font-size: 20px;
+    left: 100px;
+    top: 100px;
+    color: #fff;
+    text-align: center;
+}
+
+.titulo {
+    text-align: center;
+}
