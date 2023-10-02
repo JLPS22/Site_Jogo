@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/login.css">
+    <title>Login</title>
+</head>
+<body>
+
+    <div class="banner">
+        <div id="login">
+            <form method="post">
+
+                <h1>Login</h1>
+
+                <div class="conteudo">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email">
+                </div>
+
+                <div class="conteudo">
+                    <label for="senha">Senha:</label>
+                    <input type="password" id="senha" name="senha">
+                </div>
+
+                <div class="conteudo">
+                    <input type="checkbox" name="ML" id="ML">
+                    <label for="ML">Manter-me logado.</label>
+                </div>
+
+                <button type="submit" onclick="Unifacs()">Logar</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        function Unifacs() {
+            open('Unifacs.html')
+        }
+    </script>
+
+</body>
+</html>
