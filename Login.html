@@ -36,7 +36,17 @@
 
     <script>
         function Unifacs() {
-            open('Unifacs.html')
+            var email = document.getElementById("email").value;
+            var senha = document.getElementById("senha").value;
+
+            if(email == ""){
+                alert("Coloque seu email");
+            }else if(senha == ""){
+                alert("Coloque sua senha");
+            }else{
+                open('Unifacs.html');
+                close('Login.html')
+            }
         }
     </script>
 

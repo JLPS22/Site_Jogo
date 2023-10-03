@@ -1,4 +1,5 @@
 body {
+    background-image: url('../imagens/imagem_de_jogos.png');
     margin: 0;
     padding: 0;
     height: 100px;
@@ -19,7 +20,6 @@ body {
     padding: 18px 6% 60px 6%;
     margin: 0 0 35px 0;
     background: rgba(0, 0, 0, 0.719);
-    border: 1px solid rgba(255, 255, 255, 0.8);
     
     border-radius: 5px;
 }
@@ -84,45 +84,3 @@ button[type="submit"] {
 button[type="submit"]:hover {
     background: #acacac;
 }
-
-/*
-#login {
-    position: absolute;
-    background-color: rgba(0, 0, 0, 0.719);
-    padding: 18px 6% 60px 6%;
-    border-radius: 5px;
-}
-
-.conteudo {
-    margin-bottom: 10px;
-    color: #FFF;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-h1 {
-    text-align: center;
-    font-size: 48px;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #FFF;
-}
-
-input {
-    outline: none;
-}
-
-input[type="submit"] {
-    width: 100% !important;
-    cursor: pointer;
-    background: #ff0202;
-    padding: 8px 5px;
-    color: #ffffff;
-    font-size: 20px;
-    margin-bottom: 10px;
-    text-shadow: 0 1px 1px #333;
-
-    transition: all 0.2s linear;
-}
-input[type="submit"]:hover {
-    background: #acacac;
-}
-*/
