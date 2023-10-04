@@ -1,3 +1,8 @@
+body{ 
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+}
+
 h1{
     color: rgba(255, 0, 0, 0.872);
     font-size:xx-large;    
@@ -40,10 +45,6 @@ section{
     line-height: 100px;
     height: 100px;
     font-size: 30px;
-}
-
-p{
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 video{align-items: center;}
