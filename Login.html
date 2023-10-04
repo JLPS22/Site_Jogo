@@ -10,7 +10,7 @@
 
     <div class="banner">
         <div id="login">
-            <form method="post">
+            <form method="post" action="JavaScript: Unifacs()">
 
                 <h1>Login</h1>
 
@@ -30,7 +30,7 @@
                     <a href="">Criar conta.</a>
                 </div>
 
-                <button type="submit" onclick="Unifacs()">Logar</button>
+                <button type="submit">Logar</button>
             </form>
         </div>
     </div>
@@ -42,8 +42,10 @@
 
             if(email == ""){
                 alert("Coloque seu email");
+                document.getElementById("email").focus();
             }else if(senha == ""){
                 alert("Coloque sua senha");
+                document.getElementById("senha").focus();
             }else{
                 open('Unifacs.html');
                 close('Login.html');
