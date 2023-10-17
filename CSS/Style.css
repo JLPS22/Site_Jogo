@@ -1,108 +1,197 @@
-body{ 
-    font-family: Arial, Helvetica, sans-serif;
-    overflow-x: hidden;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-h1{
-    color: rgba(255, 0, 0, 0.872);
-    font-size:xx-large;    
-}
-    
-nav{color: white;}
-    
-header{
-    border: 2px solid black;
-    width: auto;padding: auto;margin: auto;
-    background-color: rgba(255, 0, 0, 0.788);
-    text-align: center;    
-}
-
-div{
-    text-align: center;    
+body {
+    background: #121212;
     color: white;
 }
 
-h2{color: white;}
+/* <nav-list> */
 
-h3{text-align: center;}
-
-section{
-    background-color: rgba(255, 0, 0, 0.813);
-    border: 2px solid black;
+.logo {
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
 }
 
-.flex-container{  
+nav {
     display: flex;
-    flex-flow: row wrap;
-    background-color: gray;
-}
-
-.flex-container>div{ 
-    background-color: #f1f1f1;
-    width: 100px;
-    margin: 10px;
-    text-align: center;
-    line-height: 100px;
-    height: 100px;
-    font-size: 30px;
-}
-
-video{align-items: center;}
-
-#inicial{
-    position: fixed; /*  absolute ou fixed */
-    width: 100%;
-    z-index: 20;
-    height: 100%;
-    left: 0px;
-    top: 0px;
-}
-
-footer{
-    border: 5px solid red;
-    color: black solid;
-    text-align: center;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
-
-.container-fluid{
-    background-color: rgba(255, 0, 0, 0.826);
-    text-shadow: 20%;
-    font-size: x-large;
-    font-weight: 600;
-}
-
-#Combat{border: 5px solid black;}
-    
-.carouselExample{
-    width: 500px;
-    display: flex;
+    justify-content: space-around;
     align-items: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background: #2a2a2a;
+    height: 10vh;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+}
+
+.nav-list li {
+    letter-spacing: 3px;
+    margin-left: 32px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+a :hover {
+    opacity: 0.7;
+}
+
+/* </nav-list> */
+
+/* <Entrada da pesquisa> */
+
+input {
+    outline: none;
+}
+
+input:not([type="checkbox"]) {
+    width: 95%;
+    margin-top: 3px;
+    padding: 8px;
+    border: 1px solid #b2b2b2;
+
+    -webkit-border-radius: 3px;
+    border-radius: 15px;
+
+    -webkit-box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.6) inset;
+    box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.6) inset;
+
+    -webkit-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+}
+
+/* </Entrada da pesquisa> */
+
+/* <Butão> */
+
+button[type="submit"] {
+    cursor: pointer;
+    padding: 8px 5px;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0);
+    color: white;
+    border: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    letter-spacing: 1px;
+    font-size: 18px;
+}
+
+button[type="submit"]:hover {
+    transition: all 500ms ease-in-out;
+    background: #ffffff;
+    color: black;
+}
+
+/* </Butão> */
+
+/* <Carousel> */
+
+.slider{
+    margin: 0 auto;
+    width: 800p;
+    height: 600px;
+    overflow: hidden;
+    margin-top: 50px;
+    margin-left: 265px;
+}
+
+.slides{
+    width: 400%;
+    height: 400px;
+    display: flex;
+}
+
+.slides input{
+    display: none;
+}
+
+.slide{
+    width: 25%;
+    position: relative;
+    transition: 2s;
+}
+
+.slide img{
+    width: 800px;
+}
+
+.manual-navgation{
+    position: absolute;
+    width: 800px;
+    margin-top: -10px;
+    display: flex;
     justify-content: center;
 }
 
-
-
-/* Parte do Call of Duty */
-
-.container {
-    position: relative;
+.manual-btn{
+    border: 2px solid #FFF;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
 }
 
-#imagem {
-    position:relative;
-    text-align: center;
+.manual-btn:not(:last-child){
+    margin-right: 40px;
 }
 
-#texto {
+.manual-btn:hover{
+    background-color: white;
+}
+
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+    margin-left: -25%;
+}
+
+#radio3:checked ~ .first{
+    margin-left: -50%;
+}
+
+.navigation-auto div{
+    border: 2px solid #20a6ff;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.navigation-auto{
     position: absolute;
-    font-size: 20px;
-    left: 100px;
-    top: 100px;
-    color: #fff;
-    text-align: center;
+    width: 800px;
+    margin-top: 390px;
+    display: flex;
+    justify-content: center;
 }
 
-.titulo {
-    text-align: center;
+.navigation-auto div:not(:last-child){
+    margin-right: 40px;
 }
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+    background-color: #FFF;
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2{
+    background-color: #FFF;
+}
+
+#radio3:checked ~ .navigation-auto .auto-btn3{
+    background-color: #FFF;
+}
+
+/* </Carousel> */
