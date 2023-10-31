@@ -6,6 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>XGames</title>
   <link rel="stylesheet" href="CSS/Style.css">
+
+  <!-- Font Import -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
@@ -71,39 +77,58 @@
   <!--Fim do Carousel-->
 
   <header>
-    <h2>Jogos Populares</h2>
+    <center>
+      <h2>Jogos Populares</h2>
+    </center>
   </header><br>
 
-  <div class="row">
-    <div class="col-4">
+  <div id="linha1">
+    <div class="card">
 
-      <div class="card" style="width: 18rem;">
-        <img src="imagens/jogo1.jpeg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Jogo 1</h5>
-          <p class="card-text">Elimine a maior quantidade de inimigos e sobreviva até o final.</p>
-          <p>Preço promocional,R$39,00</p>
-          <a href="#" class="btn btn-primary">Comprar</a>
-        </div>
-      </div>
+      <img src="imagens/jogo1.jpeg" class="card-img-top" alt="..." height="200">
 
+      <h5 class="card-title">Jogo 1</h5>
+      <p class="card-text">Elimine a maior quantidade de inimigos e sobreviva até o final.</p>
+      <p>Preço promocional,R$39,00</p>
+      <button class="button" type="button" value="Comprar">Comprar</button>
     </div>
-    <div class="col-4">
-      <div class="card" style="width: 18rem;">
-        <img src="imagens/jogo2.jpeg" class="card-img-top" alt="...">
+
+    <div class="card">
+      <img src="imagens/jogo2.jpeg" class="card-img-top" alt="..." height="200">
+      <h5 class="card-title">Jogo 2</h5>
+      <p class="card-text">Chegue bem classificado até o final da corrida. </p>
+      <p>R$69,00</p>
+      <button class="button" type="button" value="Comprar">Comprar</button>
+    </div>
+
+    <div class="card">
+      <img src="imagens/jogo 33.jpeg" class="card-img-top" alt="..." height="200">
+      <h5 class="card-title">Jogo 2</h5>
+      <p class="card-text">Chegue bem classificado até o final da corrida. </p>
+      <p>R$69,00</p>
+      <button class="button" type="button" value="Comprar">Comprar</button>
+    </div>
+
+  </div>
+
+
+
+
+
+  <!-- <div class="card" style="width: 18rem;">
+        <img src="imagens/jogo2.jpeg" class="card-img-top" alt="..." height="200">
         <div class="card-body">
           <h5 class="card-title">Jogo 2</h5>
           <p class="card-text">Chegue bem classificado até o final da corrida. </p>
           <p>R$69,00</p>
           <a href="#" class="btn btn-primary">Comprar</a>
         </div>
-      </div>
+     
 
-    </div>
-    <div class="col-4">
+   
 
       <div class="card" style="width: 18rem;">
-        <img src="imagens/jogo 33.jpeg" class="card-img-top" alt="...">
+        <img src="imagens/jogo 33.jpeg" class="card-img-top" alt="..." height="200">
         <div class="card-body">
           <h5 class="card-title">Jogo 3</h5>
           <p class="card-text">Nesse eletrizante jogo RPG, construa a sua civilização.</p>
@@ -115,19 +140,19 @@
     <div class="col-4">
 
       <div class="card" style="width: 18rem;">
-        <img src="imagens/jogo4.jpeg" class="card-img-top" alt="...">
+        <img src="imagens/jogo4.jpeg" class="card-img-top" alt="..." height="200">
         <div class="card-body">
           <h5 class="card-title">Jogo 4</h5>
           <p class="card-text">Cuide bem do seu Pet. </p>
           <p>R$80,00</p>
           <a href="#" class="btn btn-primary">Comprar</a>
         </div>
-      </div>
-    </div>
+      </div> -->
+  <!-- </div>
 
     <div class="col-4">
       <div class="card" style="width: 18rem;">
-        <img src="imagens/jogo5.jpeg" class="card-img-top" alt="...">
+        <img src="imagens/jogo5.jpeg" class="card-img-top" alt="..." height="200">
         <div class="card-body">
           <h5 class="card-title">Jogo 5</h5>
           <p class="card-text">Se vire nos 30!</p>
@@ -139,7 +164,7 @@
 
     <div class="col-4">
       <div class="card" style="width: 18rem;">
-        <img src="imagens/jogo6.jpeg" class="card-img-top" alt="...">
+        <img src="imagens/jogo6.jpeg" class="card-img-top" alt="..." height="200">
         <div class="card-body">
           <h5 class="card-title">Jogo 6</h5>
           <p class="card-text">Seja um cozinheiro por um dia e administre seu restaurante.</p>
@@ -147,8 +172,8 @@
           <a href="#" class="btn btn-primary">Comprar</a>
         </div>
       </div>
-    </div>
-  </div>
+    </div> -->
+  <!-- </div> -->
 
   </section>
   <br><br>
@@ -195,6 +220,7 @@
       Rodapé
     </footer>
 
+    <script src="JS/script.js"></script>
 
 </body>
 
