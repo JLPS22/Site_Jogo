@@ -221,7 +221,6 @@ button[type="submit"]:hover {
 
 .button:hover {
     transition: 0.2s;
-<<<<<<< HEAD
     background-color: rgb(204, 204, 204);
 }
 
@@ -281,16 +280,3 @@ button[value="Enviar"] {
 }
 
 /* </Final do campo de Comentários> */
-=======
-    background-color: rgba(39, 226, 14, 0.767);
-    
-    
-}
-
-.button:hover {
-    transition: 0.2s;
-    background-color: rgba(39, 226, 14, 0.767);
-    
-    
-}
->>>>>>> 716d278cd5281f17b54442986f9dc99348db6d03
