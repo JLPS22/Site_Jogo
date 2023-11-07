@@ -220,7 +220,62 @@ button[type="submit"]:hover {
 
 .button:hover {
     transition: 0.2s;
-    background-color: rgba(39, 226, 14, 0.767);
-    
-    
+    background-color: rgb(204, 204, 204);
 }
+
+/* <Início do Rodapé> */
+
+footer {
+	background-color: #2a2a2a;
+	color: #fff;
+	padding: 20px;
+	text-align: center;
+	margin-top: 50px;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+li {
+	display: inline-block;
+	margin: 0 10px;
+}
+
+/* </Final do Rodapé> */
+
+/* <Início do campo de Comentários> */
+
+label,textarea {
+  margin-left: 20px;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+}
+
+textarea {
+  margin-left: 20px;
+  padding: 10px;
+  min-width: 1300px;
+  line-height: 1.5;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-shadow: 1px 1px 1px #999;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+button[value="Enviar"] {
+    margin-top: 10px;
+    margin-left: 20px;
+    padding: 10px 20px;
+    color: black;
+    background-color: white;
+    border-radius: 6px;
+}
+
+/* </Final do campo de Comentários> */
