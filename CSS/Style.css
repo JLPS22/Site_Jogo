@@ -1,3 +1,4 @@
+
 * {
     margin: 0;
     padding: 0;
@@ -99,11 +100,11 @@ button[type="submit"]:hover {
 
 .slider{
     margin: 0 auto;
-    width: 800p;
+    width: 800px;
     height: 600px;
     overflow: hidden;
     margin-top: 50px;
-    margin-left: 265px;
+    
 }
 
 .slides{
@@ -196,7 +197,7 @@ button[type="submit"]:hover {
 
 /* </Carousel> */
 
-#linha1{   
+#linha{   
   display: flex;
   justify-content: center;
   align-items: center;
@@ -216,6 +217,13 @@ button[type="submit"]:hover {
     color: black;
     background-color: white;
     border-radius: 6px;
+}
+
+.button:hover {
+    transition: 0.2s;
+    background-color: rgba(39, 226, 14, 0.767);
+    
+    
 }
 
 .button:hover {
