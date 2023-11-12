@@ -1,51 +1,44 @@
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
-}
-
 body {
-    background: #121212;
-    color: white;
+  background: #121212;
+  color: white;
 }
 
 /* <nav-list> */
 
 .logo {
-    font-size: 24px;
-    text-transform: uppercase;
-    letter-spacing: 4px;
+  font-size: 24px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
 }
 
 nav {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    background: #2a2a2a;
-    height: 10vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background: #2a2a2a;
+  height: 10vh;
 }
 
 .nav-list {
-    list-style: none;
-    display: flex;
+  list-style: none;
+  display: flex;
 }
 
 .nav-list li {
-    letter-spacing: 3px;
-    margin-left: 32px;
+  letter-spacing: 3px;
+  margin-left: 32px;
 }
 
 a {
-    color: white;
-    text-decoration: none;
-    transition: 0.3s;
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
 }
 
 a :hover {
-    opacity: 0.7;
+  opacity: 0.7;
 }
 
 /* </nav-list> */
@@ -53,23 +46,23 @@ a :hover {
 /* <Entrada da pesquisa> */
 
 input {
-    outline: none;
+  outline: none;
 }
 
 input:not([type="checkbox"]) {
-    width: 95%;
-    margin-top: 3px;
-    padding: 8px;
-    border: 1px solid #b2b2b2;
+  width: 95%;
+  margin-top: 3px;
+  padding: 8px;
+  border: 1px solid #b2b2b2;
 
-    -webkit-border-radius: 3px;
-    border-radius: 15px;
+  -webkit-border-radius: 3px;
+  border-radius: 15px;
 
-    -webkit-box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.6) inset;
-    box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.6) inset;
+  -webkit-box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.6) inset;
+  box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.6) inset;
 
-    -webkit-transition: all 0.2s linear;
-    transition: all 0.2s linear;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
 }
 
 /* </Entrada da pesquisa> */
@@ -77,158 +70,175 @@ input:not([type="checkbox"]) {
 /* <Butão> */
 
 button[type="submit"] {
-    cursor: pointer;
-    padding: 8px 5px;
-    border-radius: 5px;
-    background: rgba(255, 255, 255, 0);
-    color: white;
-    border: none;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    letter-spacing: 1px;
-    font-size: 18px;
+  cursor: pointer;
+  padding: 8px 5px;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0);
+  color: white;
+  border: none;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  letter-spacing: 1px;
+  font-size: 18px;
 }
 
 button[type="submit"]:hover {
-    transition: all 500ms ease-in-out;
-    background: #ffffff;
-    color: black;
+  transition: all 500ms ease-in-out;
+  background: #ffffff;
+  color: black;
 }
 
 /* </Butão> */
 
 /* <Carousel> */
 
-.slider{
-    margin: 0 auto;
-    width: 800px;
-    height: 600px;
-    overflow: hidden;
-    margin-top: 50px;
-    
+.slider {
+  margin: 0 auto;
+  width: 800px;
+  height: 600px;
+  overflow: hidden;
+  margin-top: 50px;
 }
 
-.slides{
-    width: 400%;
-    height: 400px;
-    display: flex;
+.slides {
+  width: 400%;
+  height: 400px;
+  display: flex;
 }
 
-.slides input{
-    display: none;
+.slides input {
+  display: none;
 }
 
-.slide{
-    width: 25%;
-    position: relative;
-    transition: 2s;
+.slide {
+  width: 25%;
+  position: relative;
+  transition: 2s;
 }
 
-.slide img{
-    width: 800px;
+.slide img {
+  width: 800px;
 }
 
-.manual-navgation{
-    position: absolute;
-    width: 800px;
-    margin-top: -10px;
-    display: flex;
-    justify-content: center;
+.manual-navgation {
+  position: absolute;
+  width: 800px;
+  margin-top: -10px;
+  display: flex;
+  justify-content: center;
 }
 
-.manual-btn{
-    border: 2px solid #FFF;
-    padding: 5px;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: 1s;
+.manual-btn {
+  border: 2px solid #fff;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
 }
 
-.manual-btn:not(:last-child){
-    margin-right: 40px;
+.manual-btn:not(:last-child) {
+  margin-right: 40px;
 }
 
-.manual-btn:hover{
-    background-color: white;
+.manual-btn:hover {
+  background-color: white;
 }
 
-#radio1:checked ~ .first{
-    margin-left: 0;
+#radio1:checked ~ .first {
+  margin-left: 0;
 }
 
-#radio2:checked ~ .first{
-    margin-left: -25%;
+#radio2:checked ~ .first {
+  margin-left: -25%;
 }
 
-#radio3:checked ~ .first{
-    margin-left: -50%;
+#radio3:checked ~ .first {
+  margin-left: -50%;
 }
 
-.navigation-auto div{
-    border: 2px solid #20a6ff;
-    padding: 5px;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: 1s;
+.navigation-auto div {
+  border: 2px solid #20a6ff;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
 }
 
-.navigation-auto{
-    position: absolute;
-    width: 800px;
-    margin-top: 390px;
-    display: flex;
-    justify-content: center;
+.navigation-auto {
+  position: absolute;
+  width: 800px;
+  margin-top: 390px;
+  display: flex;
+  justify-content: center;
 }
 
-.navigation-auto div:not(:last-child){
-    margin-right: 40px;
+.navigation-auto div:not(:last-child) {
+  margin-right: 40px;
 }
 
-#radio1:checked ~ .navigation-auto .auto-btn1{
-    background-color: #FFF;
+#radio1:checked ~ .navigation-auto .auto-btn1 {
+  background-color: #fff;
 }
 
-#radio2:checked ~ .navigation-auto .auto-btn2{
-    background-color: #FFF;
+#radio2:checked ~ .navigation-auto .auto-btn2 {
+  background-color: #fff;
 }
 
-#radio3:checked ~ .navigation-auto .auto-btn3{
-    background-color: #FFF;
+#radio3:checked ~ .navigation-auto .auto-btn3 {
+  background-color: #fff;
 }
 
 /* </Carousel> */
 
-#linha{   
+#linha {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .card {
-    border-radius: 5px;
-    box-shadow: 7px 7px 13px 0px rgba(50, 50, 50, 0, 22);
-    padding: 20px;
-    margin: 10px;
-    width: 400px;
+  border-radius: 5px;
+  box-shadow: 7px 7px 13px 0px rgba(50, 50, 50, 0, 22);
+  padding: 20px;
+  margin: 10px;
+  width: 400px;
 }
 
 .button {
-    margin-top: 10px;
-    padding: 10px 10px;
-    color: black;
-    background-color: white;
-    border-radius: 6px;
+  margin-top: 10px;
+  padding: 10px 10px;
+  color: black;
+  background-color: white;
+  border-radius: 6px;
 }
 
 .button:hover {
-    transition: 0.2s;
-    background-color: rgba(39, 226, 14, 0.767);
-    
-    
+  transition: 0.2s;
+  background-color: rgba(39, 226, 14, 0.767);
 }
 
 .button:hover {
-    transition: 0.2s;
-    background-color: rgba(39, 226, 14, 0.767);
-    
-    
+  transition: 0.2s;
+  background-color: rgba(39, 226, 14, 0.767);
+}
+
+.line-card-title,
+.line-card-body {
+  padding: 10px;
+  text-align: center;
+}
+.line-card-flex {
+  flex-direction: row;
+  display: flex;
+}
+
+.card-game {
+  flex: 1;
+  min-width: calc(
+    33.33% - 20px
+  ); /* Para garantir que haja espaço entre as divs */
+  box-sizing: border-box;
+  margin: 5px;
+  text-align: center;
+  padding: 10px;
 }
