@@ -31,6 +31,47 @@ nav {
   margin-left: 32px;
 }
 
+.mobile-menu {
+  display: none;
+  cursor: pointer;
+}
+
+.mobile-menu div {
+  width: 32px;
+  height: 2px;
+  background: white;
+  margin: 8px;
+}
+
+@media (max-width: 999px) {
+  body {
+    overflow-x: hidden;
+  }
+  .nav-list {
+    position: absolute;
+    top: 8vh;
+    right: 0;
+    width: 100vw;
+    height: 92vh;
+    background: #23232e;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    transform: translateX(100%);
+  }
+  .nav-list li {
+    margin-left: 0;
+    opacity: 0;
+  }
+  .mobile-menu {
+    display: block;
+  }
+}
+
+.nav-list.active {
+  transform: translateX(0);
+}
+
 a {
   color: white;
   text-decoration: none;
@@ -156,6 +197,14 @@ button[type="submit"]:hover {
   margin-left: -50%;
 }
 
+#radio4:checked ~ .first {
+  margin-left: -75%;
+}
+
+#radio5:checked ~ .first {
+  margin-left: -100%;
+}
+
 .navigation-auto div {
   border: 2px solid #20a6ff;
   padding: 5px;
@@ -185,6 +234,14 @@ button[type="submit"]:hover {
 }
 
 #radio3:checked ~ .navigation-auto .auto-btn3 {
+  background-color: #fff;
+}
+
+#radio4:checked ~ .navigation-auto .auto-btn4 {
+  background-color: #fff;
+}
+
+#radio5:checked ~ .navigation-auto .auto-btn5 {
   background-color: #fff;
 }
 

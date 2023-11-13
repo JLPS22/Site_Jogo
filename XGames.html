@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>XGames</title>
+  <link rel="icon" href="imagens/favicon_Logo.ico" type="image/x-icon">
   <link rel="stylesheet" href="CSS/Style.css">
 
   <!-- Font Import -->
@@ -44,17 +45,25 @@
       <input type="radio" name="radio-btn" id="radio1">
       <input type="radio" name="radio-btn" id="radio2">
       <input type="radio" name="radio-btn" id="radio3">
+      <input type="radio" name="radio-btn" id="radio4">
+      <input type="radio" name="radio-btn" id="radio5">
       <!--Fim do Radio Buttons-->
 
       <!--Slide images-->
       <div class="slide first">
-        <img src="imagens/Carousel/GTA6.jpg" alt="GTA VI">
+        <img src="imagens/Carousel/Assassins_Creed.png" alt="Assassins Creed Mirade">
       </div>
       <div class="slide">
-        <img src="imagens/Carousel/FIFA23.jpg" alt="Fifa 23">
+        <img src="imagens/Carousel/Spider_Man.png" alt="Marvel's Spider-Man 2">
       </div>
       <div class="slide">
-        <img src="imagens/Carousel/Street_Fighter_6.jpg" alt="Street Fighter 6">
+        <img src="imagens/Carousel/FC_24.png" alt="FC 24">
+      </div>
+      <div class="slide">
+        <img src="imagens/Carousel/Street_Fighter.png" alt="Street Fighter 6">
+      </div>
+      <div class="slide">
+        <img src="imagens/Carousel/Mario_Wonder.png" alt="Mario Wonder">
       </div>
       <!--Fim Slide images-->
 
@@ -63,6 +72,8 @@
         <div class="auto-btn1"></div>
         <div class="auto-btn2"></div>
         <div class="auto-btn3"></div>
+        <div class="auto-btn4"></div>
+        <div class="auto-btn5"></div>
       </div>
 
     </div>
@@ -71,13 +82,15 @@
       <label for="radio1" class="manual-btn"></label>
       <label for="radio2" class="manual-btn"></label>
       <label for="radio3" class="manual-btn"></label>
+      <label for="radio4" class="manual-btn"></label>
+      <label for="radio5" class="manual-btn"></label>
     </div>
 
   </div>
   <!--Fim do Carousel-->
 
   <div class="line-card">
-    <div class="line-card-title">Jogos Populares</div>
+    <h2 class="line-card-title">Jogos Populares</h2>
     <div class="line-card-body line-card-flex"><div class="card-game">
         <img src="imagens/Alan Wake 2/Alan-Wake-2-1-1024x768.webp" class="card-img-top" alt="..." height="200">
 
@@ -103,7 +116,7 @@
       
   </div>
 <div class="line-card">
-    <div class="line-card-title">Jogos Populares</div>
+    <h2 class="line-card-title">Jogos Populares</h2>
     <div class="line-card-body line-card-flex"><div class="card-game">
         <img src="imagens/jogo1.jpeg" class="card-img-top" alt="..." height="200">
 
@@ -129,7 +142,7 @@
       
   </div>
   <div class="line-card">
-    <div class="line-card-title">Jogos Populares</div>
+    <h2 class="line-card-title">Jogos Populares</h2>
     <div class="line-card-body line-card-flex"><div class="card-game">
         <img src="imagens/jogo1.jpeg" class="card-img-top" alt="..." height="200">
 
@@ -242,32 +255,48 @@
   </section><br>
   <img src="imagens/Gran_Turismo/GT.jpg" height="400"> </Img><img src="imagens/Gran_Turismo/Logo_GT7.jpg" width="400"
     alt="imagem">
-  < <p>Diretamente dos Cinemas, Gran Turismo, GT com gráficos ainda mais reais super realistas e
+  <p>Diretamente dos Cinemas, Gran Turismo, GT com gráficos ainda mais reais super realistas e
     com efeitos sonoros surpreendentes.</p>
-    <center> <video controls>
-        <source src="imagens/Gran_Turismo/Video_GT.mp4" type="video/mp4">
-      </video></center>
-    </section>
+  <center> <video controls>
+      <source src="imagens/Gran_Turismo/Video_GT.mp4" type="video/mp4">
+    </video>
+  </center>
+  </section>
 
-    <h3>Mortal Combat </h3>
-    <center>
-      <p>Obtenha com um SUPER DESCONTO! </p>
-      <p>30% Aproveite</p>
-      <img src="imagens/Mortal_Kombat/MK_Logo.jpg">
-    </center><br><br>
+  <h3>Mortal Combat </h3>
+  <center>
+    <p>Obtenha com um SUPER DESCONTO! </p>
+    <p>30% Aproveite</p>
+    <img src="imagens/Mortal_Kombat/MK_Logo.jpg">
+  </center><br><br>
 
-    <P>Comentários</P>
-    <div class="form-floating">
-      <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
-        style="height: 100px"></textarea>
-      <label for="floatingTextarea2">Deixe aqui os seus comentários sobre o Site!</label>
-    </div>
+  <!-- <Início do campo de Comentários> -->
 
-    <footer>
-      Rodapé
-    </footer>
+  <label for="story">Nos conte sobre sua experiência no site:</label>
 
-    <script src="JS/script.js"></script>
+  <textarea id="story" name="story" rows="5" cols="33">
+Achei o site...
+  </textarea>
+
+  <button class="button" type="button" value="Enviar">Enviar</button>
+
+  <!-- </Final do campo de Comentários> -->
+
+  <!-- <Início do Rodapé> -->
+
+  <footer>
+    <p>&copy; 2023 - Todos os direitos reservados</p>
+    <br><br>
+    <ul>
+      <li><a href="#">Política de privacidade</a></li>
+      <li><a href="#">Sobre nós</a></li>
+      <li><a href="#">Contato</a></li>
+    </ul>
+  </footer>
+
+  <!-- </Final do Rodapé> -->
+
+  <script src="JS/script.js"></script>
 
 </body>
 
