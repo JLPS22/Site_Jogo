@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/login.css">
     <title>Login</title>
 </head>
+
 <body>
 
     <div class="banner">
         <div id="login">
-            <form method="post" action="JavaScript: Unifacs()">
+            <form method="post" action="JavaScript: validacaoLogin()">
 
                 <h1>Login</h1>
 
@@ -31,27 +33,13 @@
                 </div>
 
                 <button type="submit">Logar</button>
+                
             </form>
         </div>
     </div>
 
-    <script>
-        function Unifacs() {
-            var email = document.getElementById("email").value;
-            var senha = document.getElementById("senha").value;
-
-            if(email == ""){
-                alert("Coloque seu email");
-                document.getElementById("email").focus();
-            }else if(senha == ""){
-                alert("Coloque sua senha");
-                document.getElementById("senha").focus();
-            }else{
-                open('XGames.html');
-                close('Login.html');
-            }
-        }
-    </script>
+    <script src="JS/scriptLogin.js"></script>
 
 </body>
+
 </html>

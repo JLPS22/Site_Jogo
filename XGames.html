@@ -12,7 +12,6 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
-   <link rel="preconnect" href="jogos.html">
 </head>
 
 <body>
@@ -27,6 +26,7 @@
         <li><a href="XGames.html">Comunidade</a></li>
         <li><a href="XGames.html">Sobre</a></li>
         <li><a href="XGames.html">Suporte</a></li>
+        <li><a href="XGames.html">Usuário</a></li>
       </ul>
       <ul class="nav-list">
         <li><input type="text" id="pesq" name="pesq"></li>
@@ -51,23 +51,23 @@
 
       <!--Slide images-->
       <div class="slide first">
-        <img src="imagens/Carousel/Assassins_Creed.png" alt="Assassins Creed Mirade">
+        <img src="imagens/Carousel/Assassins_Creed.png" alt="Assassins Creed Mirade" onclick="pagJogos(0)">
         <p><b>Assassin's Creed Mirage</b> é o novo jogo da franquia de sucesso da Ubisoft que leva os jogadores para a cidade de Bagdá no século IX. O game tenta resgatar as origens da franquia apostando novamente nos assassinatos silenciosos.</p>
       </div>
       <div class="slide">
-        <img src="imagens/Carousel/Spider_Man.png" alt="Marvel's Spider-Man 2">
+        <img src="imagens/Carousel/Spider_Man.png" alt="Marvel's Spider-Man 2" onclick="pagJogos(1)">
         <p>Em <b>MARVEL'S SPIDER-MAN 2</b>, o incrível poder do simbionte obriga Peter e Miles a encarar um desafio sem igual que vai muito além de seus alter egos mascarados, já que precisam encontrar o equilíbrio entre suas vidas pessoais, amizades e o dever de proteger quem precisa.</p>
       </div>
       <div class="slide">
-        <img src="imagens/Carousel/FC_24.png" alt="FC 24">
+        <img src="imagens/Carousel/FC_24.png" alt="FC 24" onclick="pagJogos(2)">
         <p>O <b>EA SPORTS FC 24</b> traz para você a experiência mais autêntica de futebol de todos os tempos com o HyperMotionV*, PlayStyles e um Frostbite Engine aprimorado, que reinventa como mais de 19.000 atletas realistas se movimentam, jogam e aparecem em todas as partidas.</p>
       </div>
       <div class="slide">
-        <img src="imagens/Carousel/Street_Fighter.png" alt="Street Fighter 6">
+        <img src="imagens/Carousel/Street_Fighter.png" alt="Street Fighter 6" onclick="pagJogos(3)">
         <p><b>Street Fighter 6</b> tem uma campanha focada em seu novo modo World Tour, que é protagonizado por um lutador original criado pelo jogador. Este personagem passará por uma jornada introspectiva, recheada de elementos de RPG, com o objetivo de se tornar mais forte.</p>
       </div>
       <div class="slide">
-        <img src="imagens/Carousel/Mario_Wonder.png" alt="Mario Wonder">
+        <img src="imagens/Carousel/Mario_Wonder.png" alt="Mario Wonder" onclick="pagJogos(4)">
         <p><b>Super Mario Bros. Wonder</b> chama a atenção pelos seus visuais extravagantes e expressivos, além de se passar em um local diferente: o Reino da Flor. Isso significa que os jogadores podem esperar inimigos, temáticas de mundos, power-ups e conceitos que nunca apareceram anteriormente na franquia.</p>
       </div>
       <!--Fim Slide images-->
@@ -108,7 +108,7 @@
       <h4 class="card-title">Hogwarts Legacy</h4>
       <p class="card-text">Desfruta de uma nova aventura no Mundo da Feitiçaria.</p>
       <p>R$ 153,99</p>
-      <a href="jogos.html" class="button" type="button" value="Comprar">Comprar</button></a>
+      <button type="button" class="button" onclick="pagJogos(5)">Comprar</button>
     </div>
 
     <div class="card">
@@ -116,7 +116,7 @@
       <h4 class="card-title">Star Wars Jedi: Survivor</h4>
       <p class="card-text">Continue a jornada de Cal, e enfrente a Escuridão. </p>
       <p>R$ 299,00</p>
-      <a href="jogo2.html"><button class="button" type="button" value="Comprar">Comprar</button></a>
+      <button type="button" class="button" onclick="pagJogos(6)">Comprar</button>
     </div>
 
     <div class="card">
@@ -124,7 +124,7 @@
       <h4 class="card-title">Alan Wake 2</h4>
       <p class="card-text">Alan Wake escreve uma história sombria para moldar a realidade ao seu redor. </p>
       <p>R$ 225,00</p>
-      <a href="jogo3.html"><button class="button" type="button" value="Comprar">Comprar</button></a>
+      <button type="button" class="button" onclick="pagJogos(7)">Comprar</button>
     </div>
 
   </div>
@@ -137,7 +137,7 @@
       <h4 class="card-title">Counter-Strike 2</h4>
       <p class="card-text">Torna-te mais que Global com o novo Rating CS.</p>
       <p>Grátis para jogar.</p>
-      <a href="jogo4.html"> <button class="button" type="button" value="Comprar">Jogar</button></a>
+      <button type="button" class="button" onclick="pagJogos(8)">Comprar</button>
     </div>
 
     <div class="card">
@@ -145,7 +145,7 @@
       <h4 class="card-title">Final Fantasy XVI</h4>
       <p class="card-text">O legado dos cristais definiu o destino da humanidade por tempo demais.</p>
       <p>R$ 279,99</p>
-      <a href="jogos5.html"><button class="button" type="button" value="Comprar">Comprar</button></a>
+      <button type="button" class="button" onclick="pagJogos(9)">Comprar</button>
     </div>
 
     <div class="card">
@@ -153,7 +153,7 @@
       <h4 class="card-title">Starfield</h4>
       <p class="card-text">Integre a Constelação hoje mesmo e dê início à sua aventura.</p>
       <p>R$ 299,00</p>
-      <a href="jogos6.html">  <button class="button" type="button" value="Comprar">Comprar</button> </a>
+      <button type="button" class="button" onclick="pagJogos(10)">Comprar</button>
     </div>
 
   </div>
@@ -166,7 +166,7 @@
       <h4 class="card-title">Resident Evil 4</h4>
       <p class="card-text">Reimaginado para trazer horror de sobrevivência de última geração.</p>
       <p>R$ 249,00</p>
-      <a href="jogo7.html"><button class="button" type="button" value="Comprar">Comprar</button></a>
+      <button type="button" class="button" onclick="pagJogos(11)">Comprar</button>
     </div>
 
     <div class="card">
@@ -174,7 +174,7 @@
       <h4 class="card-title">Dead Island 2</h4>
       <p class="card-text">Terror, humor negro e grande matança de zumbis, em uma aventura épica.</p>
       <p>R$299,00</p>
-      <a href="jogo8.html">  <button class="button" type="button" value="Comprar">Comprar</button></a>
+      <button type="button" class="button" onclick="pagJogos(12)">Comprar</button>
     </div>
 
     <div class="card">
@@ -182,7 +182,7 @@
       <h4 class="card-title">Dead Space</h4>
       <p class="card-text">Uma experiência mais profunda e imersiva.</p>
       <p>R$ 249,00</p>
-      <a href="jogo9.html"> <button class="button" type="button" value="Comprar">Comprar</button></a>
+      <button type="button" class="button" onclick="pagJogos(13)">Comprar</button>
     </div>
 
   </div>
@@ -191,10 +191,10 @@
   <br><br><br>
 
   <div class="cod">
-    <h1><u>Call of Duty: Modern Warfare III</u></h1>
+    <h1 onclick="pagJogos(14)"><u>Call of Duty: Modern Warfare III</u></h1>
     <br>
     <div id="jogos_separados">
-      <img id="imagem" src="imagens/COD_MW_III.png">
+      <img id="imagem" src="imagens/COD_MW_III.png" onclick="pagJogos(14)">
       <div>
         <h3>ADAPTA-TE OU MORRE NUMA LUTA CONTRA A DERRADEIRA AMEAÇA</h3>
         <p>Na sequela direta do grande êxito de vendas Call of Duty: Modern Warfare II, o capitão Price e a Task Force 141 enfrentam a derradeira ameaça. O criminoso de guerra ultranacionalista Vladimir Makarov está a alargar o seu alcance pelo mundo, o que leva a Task Force 141 a entrar num combate nunca antes visto.</p>
@@ -209,10 +209,10 @@
   
     <br><br><br>
 
-    <h1><u>Gran Turismo 7</u></h1>
+    <h1 onclick="pagJogos(15)"><u>Gran Turismo 7</u></h1>
     <br>
     <div id="jogos_separados">
-      <img id="imagem" src="imagens/GT_7.png">
+      <img id="imagem" src="imagens/GT_7.png" onclick="pagJogos(15)">
       <div>
         <h3>Gran Turismo 7 reúne os melhores recursos do simulador de corridas online</h3>
         <p>Seja você um piloto competitivo ou casual, colecionador, tuner, designer de visuais ou fotógrafo — encontre seu caminho com um número impressionante de modos de jogo, incluindo favoritos dos fãs como Campanha GT, Arcade e Escola de Pilotagem.</p>
@@ -224,10 +224,10 @@
 
     <br><br><br><br>
 
-    <h1><u>The Legend of Zelda: Tears of the Kingdom</u></h1>
+    <h1 onclick="pagJogos(16)"><u>The Legend of Zelda: Tears of the Kingdom</u></h1>
     <br>
     <div id="jogos_separados">
-      <img id="imagem" src="imagens/Zelda.png">
+      <img id="imagem" src="imagens/Zelda.png" onclick="pagJogos(16)">
       <div>
         <h3>Explore as vastas terras e céus de Hyrule</h3>
         <p>Nesta continuação de The Legend of Zelda: Breath of the Wild, você decidirá seu próprio caminho pelas extensas paisagens de Hyrule e pelas misteriosas ilhas flutuantes nos vastos céus. Será que você conseguirá aproveitar o poder das novas habilidades de Link para lutar contra as forças malévolas que ameaçam o reino?</p>
@@ -267,8 +267,7 @@ Achei o site...
   </footer>
   <!-- </Final do Rodapé> -->
 
-  <!-- <script src="JS/script.js"></script> -->
-
+  <script src="JS/script.js"></script>
 
 </body>
 

@@ -10,7 +10,7 @@
 
     <div class="banner">
         <div id="login">
-            <form method="post" action="JavaScript: Unifacs()">
+            <form method="post" action="JavaScript: cadastrando_novo_user()">
 
                 <h1>Criando Conta</h1>
 
@@ -44,34 +44,7 @@
         </div>
     </div>
 
-    <script>
-        function Unifacs() {
-            var nome = document.getElementById("nome").value;
-            var email = document.getElementById("email").value;
-            var nova_senha = document.getElementById("criando_senha").value;
-            var senha = document.getElementById("senha").value;
-
-            if(nome == ""){
-                alert("Digite seu nome.");
-                document.getElementById("nome").focus();
-            }else if(email == ""){
-                alert("Coloque seu email.");
-                document.getElementById("email").focus();
-            }else if(nova_senha == ""){
-                alert("Crie uma senha.");
-                document.getElementById("criando_senha").focus();
-            }else if(senha == ""){
-                alert("Confirme a senha.");
-                document.getElementById("senha").focus();
-            }else if(nova_senha != senha){
-                alert("As senhas colocadas não são iguais.");
-                document.getElementById("senha").focus();
-            }else{
-                open('XGames.html');
-                close('Cadastros_user.html');
-            }
-        }
-    </script>
+    <script src="JS/scriptLogin.js"></script>
 
 </body>
 </html>
