@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="CSS/login.css">
+    <link rel="stylesheet" href="CSS/cadastro.css">
     <link rel="icon" href="imagens/favicon_Logo.ico" type="image/x-icon">
     <title>Cadastro</title>
 </head>
@@ -22,7 +22,7 @@
 
                 <div class="conteudo">
                     <label for="nome">Seu nome:*</label>
-                    <input type="nome" id="nome" name="nome">
+                    <input type="text" id="nome" name="nome">
                 </div>
 
                 <div class="conteudo">
@@ -43,6 +43,19 @@
                 <div class="conteudo">
                     <label for="data_nas">Data de nascimento:*</label>
                     <input type="date" name="date" id="date">
+                </div>
+
+                <div class="conteudo">
+                    <label for="genero">Gênero:*</label><br>
+                    <input type="radio" name="genero" value="f">
+                    <label for="Feminino">Feminino</label> <br>
+                    <input type="radio" name="genero" value="m">
+                    <label for="Masculino">Masculino</label>
+                </div>
+
+                <div class="conteudo">
+                    <label for="n_celular">Número do Celular. ex: (XX) XXXXX-XXXX :*</label>
+                    <input type="text" name="n_celular" id="n_celular">
                 </div>
 
                 <button type="submit">Logar</button>
