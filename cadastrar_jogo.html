@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="imagens/favicon_Logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="CSS/cadastrarJogo.css">
+    <title>Cadastrar Jogo</title>
+
+    <!-- Font Import -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!--Barra de Menu-->
+    <header>
+
+        <nav>
+            <img src="imagens/Logo1.png"><a class="logo" href="XGames.html">XGames</a>
+            <ul class="nav-list">
+                <li><a href="XGames.html">Loja</a></li>
+                <li><a href="XGames.html">Comunidade</a></li>
+                <li><a href="XGames.html">Sobre</a></li>
+                <li><a href="XGames.html">Suporte</a></li>
+            </ul>
+            <ul class="nav-list">
+                <li><input type="text" id="pesq" name="pesq"></li>
+                <li><button type="submit">Pesquisar</button></li>
+            </ul>
+        </nav>
+
+    </header>
+    <!--Fim da Barra de Menu-->
+
+    <center>
+        <h1>Cadastrando Novo Jogo</h1>
+    </center>
+
+    <form method="post" action="JavaScript: cadastrar_novo_jogo()">
+
+        <div class="container">
+
+            <div class="conteudo">
+                <label for="nome">Nome do Jogo:</label><br>
+                <input type="text" name="nomeJogo" id="nomeJogo">
+            </div>
+
+            <div class="conteudo">
+                <label for="genero">Gênero:</label><br>
+                <input type="text" name="generoJogo" id="generoJogo">
+            </div>
+
+            <div class="conteudo">
+                <label for="faixa_etaria">Faixa Etária:</label><br>
+                <input type="text" name="faixaEtaria" id="faixaEtaria">
+            </div>
+
+            <div class="conteudo">
+                <label for="dt_lancamento">Data de Lançamento:</label><br>
+                <input type="date" name="dtLancamento" id="dtLancamento">
+            </div>
+
+            <div class="conteudo">
+                <label for="desenvolvedora">Desenvolvedora:</label><br>
+                <input type="text" name="desenvolvedora" id="desenvolvedora">
+            </div>
+
+            <div class="conteudo">
+                <label for="valor">Valor:</label><br>
+                <input type="text" name="valor" id="valor">
+            </div>
+
+            <div class="conteudo">
+                <label for="avaliacao">Avaliação:</label><br>
+                <input type="text" name="avaliacao" id="avaliacao">
+            </div>
+
+            <div class="conteudo">
+                <label for="logoImg">URL da Logo do Jogo:</label><br>
+                <input type="text" name="logoImg" id="logoImg">
+            </div>
+
+            <div class="conteudo">
+                <label for="overview">Overview:</label><br>
+                <textarea id="overview" name="overview" rows="5" cols="33"></textarea>
+            </div>
+
+            <div class="conteudo">
+                <button class="enviar" type="submit">Cadastrar Jogo</button>
+            </div>
+
+        </div>
+
+    </form>
+
+    <script src="JS/cadJogo.js"></script>
+
+</body>
+
+</html>

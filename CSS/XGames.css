@@ -97,37 +97,38 @@ button[type="submit"]:hover {
 
 /* <Carousel> */
 
-.slider{
+.slider {
   margin: 0 auto;
   width: 800px;
   height: 600px;
   overflow: hidden;
   margin-top: 50px;
-  
+
 }
 
-.slides{
+.slides {
   width: 400%;
   height: 400px;
   display: flex;
 }
 
-.slides input{
+.slides input {
   display: none;
 }
 
-.slide{
+.slide {
   width: 25%;
   position: relative;
   transition: 2s;
 }
 
-.slide img{
+.slide img {
+  cursor: pointer;
   width: 800px;
   height: 450px;
 }
 
-.manual-navgation{
+.manual-navgation {
   position: absolute;
   width: 800px;
   margin-top: 10px;
@@ -135,7 +136,7 @@ button[type="submit"]:hover {
   justify-content: center;
 }
 
-.manual-btn{
+.manual-btn {
   border: 2px solid #FFF;
   padding: 5px;
   border-radius: 10px;
@@ -143,35 +144,35 @@ button[type="submit"]:hover {
   transition: 1s;
 }
 
-.manual-btn:not(:last-child){
+.manual-btn:not(:last-child) {
   margin-right: 30px;
 }
 
-.manual-btn:hover{
+.manual-btn:hover {
   background-color: white;
 }
 
-#radio1:checked ~ .first{
+#radio1:checked~.first {
   margin-left: 0;
 }
 
-#radio2:checked ~ .first{
+#radio2:checked~.first {
   margin-left: -25%;
 }
 
-#radio3:checked ~ .first{
+#radio3:checked~.first {
   margin-left: -50%;
 }
 
-#radio4:checked ~ .first{
+#radio4:checked~.first {
   margin-left: -75%;
 }
 
-#radio5:checked ~ .first{
+#radio5:checked~.first {
   margin-left: -100%;
 }
 
-.navigation-auto div{
+.navigation-auto div {
   border: 2px solid #ffffff;
   padding: 5px;
   border-radius: 10px;
@@ -179,7 +180,7 @@ button[type="submit"]:hover {
   transition: 1s;
 }
 
-.navigation-auto{
+.navigation-auto {
   position: absolute;
   width: 820px;
   margin-top: 410px;
@@ -187,36 +188,38 @@ button[type="submit"]:hover {
   justify-content: center;
 }
 
-.navigation-auto div:not(:last-child){
+.navigation-auto div:not(:last-child) {
   margin-right: 50px;
 }
 
-#radio1:checked ~ .navigation-auto .auto-btn1{
+#radio1:checked~.navigation-auto .auto-btn1 {
   background-color: #FFF;
 }
 
-#radio2:checked ~ .navigation-auto .auto-btn2{
+#radio2:checked~.navigation-auto .auto-btn2 {
   background-color: #FFF;
 }
 
-#radio3:checked ~ .navigation-auto .auto-btn3{
+#radio3:checked~.navigation-auto .auto-btn3 {
   background-color: #FFF;
 }
 
-#radio4:checked ~ .navigation-auto .auto-btn4{
+#radio4:checked~.navigation-auto .auto-btn4 {
   background-color: #FFF;
 }
 
-#radio5:checked ~ .navigation-auto .auto-btn5{
+#radio5:checked~.navigation-auto .auto-btn5 {
   background-color: #FFF;
 }
 
 /* </Carousel> */
 
-#linha{   
-display: flex;
-justify-content: center;
-align-items: center;
+/* <Parte do Meio> */
+
+#linha {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .card {
@@ -228,6 +231,7 @@ align-items: center;
 }
 
 .button {
+  cursor: pointer;
   margin-top: 10px;
   padding: 10px 10px;
   color: black;
@@ -240,11 +244,16 @@ align-items: center;
   background-color: rgb(204, 204, 204);
 }
 
+/* </Parte do Meio> */
+
+/* <Jogos Separados> */
+
 .cod {
   margin-left: 50px;
 }
 
-#jogos_separados img{
+#jogos_separados img {
+  cursor: pointer;
   height: 300px;
   border-radius: 5px;
 }
@@ -253,54 +262,59 @@ align-items: center;
   display: flex;
 }
 
-#jogos_separados h3, p{
+#jogos_separados h3,
+p {
   margin: 10px;
 }
+
+/* </Jogos Separados> */
 
 /* <Início do Rodapé> */
 
 footer {
-background-color: #2a2a2a;
-color: #fff;
-padding: 20px;
-text-align: center;
-margin-top: 50px;
+  background-color: #2a2a2a;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  margin-top: 50px;
 }
 
 ul {
-list-style: none;
-padding: 0;
-margin: 0;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 li {
-display: inline-block;
-margin: 0 10px;
+  cursor: pointer;
+  display: inline-block;
+  margin: 0 10px;
 }
 
 /* </Final do Rodapé> */
 
 /* <Início do campo de Comentários> */
 
-label,textarea {
-margin-left: 20px;
-font-size: 0.8rem;
-letter-spacing: 1px;
+label,
+textarea {
+  margin-left: 20px;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
 }
 
 textarea {
-margin-left: 20px;
-padding: 10px;
-min-width: 1300px;
-line-height: 1.5;
-border-radius: 5px;
-border: 1px solid #ccc;
-box-shadow: 1px 1px 1px #999;
+  margin-left: 20px;
+  padding: 10px;
+  min-width: 1300px;
+  line-height: 1.5;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-shadow: 1px 1px 1px #999;
 }
 
 label {
-display: block;
-margin-bottom: 10px;
+  display: block;
+  margin-bottom: 10px;
 }
 
 button[value="Enviar"] {

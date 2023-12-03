@@ -31,8 +31,9 @@ function validacaoLogin() {
                 for (let i = 0; i < emails.length; i++) {
                     if (emails[i] == email) {
                         if (senha == data[i].senha) {
+                            localStorage.setItem('idUser', data[i].id);
                             open('XGames.html');
-                            close('Login.html');
+                            close('login.html');
                             break;
                         } else {
                             alert("Senha Incorreta!");
@@ -98,9 +99,9 @@ function cadastrando_novo_user() {
             .then(response => response.json())
             .then(data => {
 
-                let x = true
-                let count = 0
-                var emails = []
+                let x = true;
+                let count = 0;
+                var emails = [];
                 var cadastrar = true;
 
                 while (x) {
@@ -115,7 +116,7 @@ function cadastrando_novo_user() {
                 for (let i = 0; i < emails.length; i++) {
                     if (emails[i] == n_email) {
                         alert("Este email já está cadastrado!");
-                        cadastrar = false
+                        cadastrar = false;
                         break;
                     }
                 }
@@ -146,7 +147,7 @@ function cadastrando_novo_user() {
                         });
     
                     open('XGames.html');
-                    close('Cadastro_user.html');
+                    close('cadastrar_user.html');
                 }
 
             })

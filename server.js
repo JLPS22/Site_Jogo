@@ -49,12 +49,29 @@ app.post('/cadastrar_user', (req, res) => {
         if (err) {
             return res.status(500).json({ error: err.message });
         }
+  
+        // ID do objeto inserido
+        const userID = this.lastID;
+  
+        // Responder com os dados do objeto cadastrado
+        res.status(201).json({ id: userID, nome, email, senha, dt_nascimento, adm: 0, sexo, n_celular });
+    });
+});
+
+// Cadastrar Jogos
+app.post('/cadastrar_jogo', (req, res) => {
+    const { nome, genero, faixa_etaria, dt_lancamento, desenvolvedora, valor, avaliacao, img, overview } = req.body;
+
+    db.run('INSERT INTO tb_jogos (nome, genero, faixa_etaria, dt_lancamento, desenvolvedora, valor, avaliacao, img, overview) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)', [nome, genero, faixa_etaria, dt_lancamento, desenvolvedora, valor, avaliacao, img, overview], function (err) {
+        if (err) {
+            return res.status(500).json({ error: err.message });
+        }
 
         // ID do objeto inserido
-        const objectId = this.lastID;
+        const jogoId = this.lastID;
 
         // Responder com os dados do objeto cadastrado
-        res.status(201).json({ id: objectId, nome, email, senha, dt_nascimento, adm: 0, sexo, n_celular });
+        res.status(201).json({id: jogoId, nome, genero, faixa_etaria, dt_lancamento, desenvolvedora, valor, avaliacao, img, overview});
     });
 });
 
