@@ -10,3 +10,49 @@ fetch('http://localhost:3000/getDataJogos')
 
     })
     .catch(error => console.error('Erro ao obter dados:', error));
+
+function comprar() {
+    
+    var add = '';
+    const idUser = localStorage.getItem('idUser');
+
+    fetch('http://localhost:3000/getDataJogos')
+        .then(response => response.json())
+        .then(data => {
+            const idJogo = localStorage.getItem('valor');
+            const nomeJogo = data[idJogo].nome;
+
+            fetch('http://localhost:3000/getData')
+                .then(response => response.json())
+                .then(user => {
+                    if (user[idUser].jogo_user == null) {
+                        add = nomeJogo;
+                    } else {
+                        add = `${user[idUser].jogo_user}, ${nomeJogo}`;
+                    }
+
+                    fetch('http://localhost:3000/atualizar-valor', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                        },
+                        body: JSON.stringify({
+                            id: idUser,
+                            nomeJogo: add
+                        }),
+                    })
+                        .then(response => response.json())
+                        .then(data => {
+                            alert(idUser);
+                            alert("Jogo Comprado.");
+                        })
+                        .catch(error => {
+                            console.error('Erro ao obter dados:', error);
+                            alert();
+                        });
+                    
+                })
+                .catch(error => console.error('Erro ao obter dados:', error));
+        })
+        .catch(error => console.error('Erro ao obter dados:', error));
+}

@@ -54,7 +54,7 @@ app.post('/cadastrar_user', (req, res) => {
         const userID = this.lastID;
   
         // Responder com os dados do objeto cadastrado
-        res.status(201).json({ id: userID, nome, email, senha, dt_nascimento, adm: 0, sexo, n_celular });
+        res.status(201).json({ id: userID, nome, email, senha, dt_nascimento, adm: 0, sexo, n_celular, jogo_user: null });
     });
 });
 
@@ -72,6 +72,20 @@ app.post('/cadastrar_jogo', (req, res) => {
 
         // Responder com os dados do objeto cadastrado
         res.status(201).json({id: jogoId, nome, genero, faixa_etaria, dt_lancamento, desenvolvedora, valor, avaliacao, img, overview});
+    });
+});
+
+// Atualizar valores dos jogos do usuário
+app.post('/atualizar-valor', (req, res) => {
+    const { id, nomeJogo } = req.body;
+    const sqlQuery = 'UPDATE tb_user SET jogo_user = ? WHERE id = ?';
+
+    db.run(sqlQuery, [nomeJogo, id], function(err) {
+        if(err) {
+            return res.status(500).json({ error: err.message });
+        }
+
+        res.json({ message: 'Valor atualizado com sucesso!' });
     });
 });
 
