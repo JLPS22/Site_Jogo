@@ -31,7 +31,7 @@ function validacaoLogin() {
                 for (let i = 0; i < emails.length; i++) {
                     if (emails[i] == email) {
                         if (senha == data[i].senha) {
-                            localStorage.setItem('idUser', data[i].id);
+                            localStorage.setItem('idUser', i);
                             open('XGames.html');
                             close('login.html');
                             break;
