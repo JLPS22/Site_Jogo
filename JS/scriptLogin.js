@@ -32,7 +32,7 @@ function validacaoLogin() {
                     if (emails[i] == email) {
                         if (senha == data[i].senha) {
                             localStorage.setItem('idUser', i);
-                            open('XGames.html');
+                            open('../XGames.html');
                             close('login.html');
                             break;
                         } else {
@@ -146,7 +146,7 @@ function cadastrando_novo_user() {
                             console.error('Erro:', error);
                         });
     
-                    open('XGames.html');
+                    open('../XGames.html');
                     close('cadastrar_user.html');
                 }
 

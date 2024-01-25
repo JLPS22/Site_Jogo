@@ -16,7 +16,7 @@ function nextImage() {
 
 function pagJogos(id) {
     localStorage.setItem('valor', id);
-    open('paginaJogo.html');
+    open('paginas/paginaJogo.html');
 }
 
 function cadJogo() {
@@ -28,7 +28,7 @@ function cadJogo() {
             const adm = data[idUser].adm;
 
             if(adm == 1) {
-                open('cadastrar_jogo.html');
+                open('paginas/cadastrar_jogo.html');
             } else {
                 alert('Você não tem permissão para cadastrar um jogo.');
             }
