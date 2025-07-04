@@ -46,7 +46,7 @@ function cadastrar_novo_jogo(){
         document.getElementById("overview").focus();
         
     } else {
-        fetch('http://localhost:3000/getDataJogos')
+        fetch('https://site-jogo.onrender.com/getDataJogos')
             .then(response => response.json())
             .then(data => {
                 let x = true;
@@ -84,7 +84,7 @@ function cadastrar_novo_jogo(){
                         overview: overview
                     };
 
-                    fetch('http://localhost:3000/cadastrar_jogo' , {
+                    fetch('https://site-jogo.onrender.com/cadastrar_jogo' , {
                         method: 'POST',
                         headers: {
                             'Content-Type': 'application/json'

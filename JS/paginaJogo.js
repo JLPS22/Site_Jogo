@@ -1,4 +1,4 @@
-fetch('http://localhost:3000/getDataJogos')
+fetch('https://site-jogo.onrender.com/getDataJogos')
     .then(response => response.json())
     .then(data => {
 
@@ -16,13 +16,13 @@ function comprar() {
     var add = '';
     const idUser = localStorage.getItem('idUser');
 
-    fetch('http://localhost:3000/getDataJogos')
+    fetch('https://site-jogo.onrender.com/getDataJogos')
         .then(response => response.json())
         .then(data => {
             const idJogo = localStorage.getItem('valor');
             const nomeJogo = data[idJogo].nome;
 
-            fetch('http://localhost:3000/getData')
+            fetch('https://site-jogo.onrender.com/getData')
                 .then(response => response.json())
                 .then(user => {
                     if (user[idUser].jogo_user == null) {
@@ -31,7 +31,7 @@ function comprar() {
                         add = `${user[idUser].jogo_user}, ${nomeJogo}`;
                     }
 
-                    fetch('http://localhost:3000/atualizar-valor', {
+                    fetch('https://site-jogo.onrender.com/atualizar-valor', {
                         method: 'POST',
                         headers: {
                             'Content-Type': 'application/json',

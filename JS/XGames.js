@@ -20,7 +20,7 @@ function pagJogos(id) {
 }
 
 function cadJogo() {
-    fetch('http://localhost:3000/getData')
+    fetch('https://site-jogo.onrender.com/getData')
         .then(response => response.json())
         .then(data => {
 

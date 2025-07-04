@@ -1,4 +1,4 @@
-fetch('http://localhost:3000/getDataJogos')
+fetch('https://site-jogo.onrender.com/getDataJogos')
     .then(response => response.json())
     .then(jogos => {
         const listaJogos = document.getElementById('objeto-list');

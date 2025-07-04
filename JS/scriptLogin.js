@@ -12,7 +12,7 @@ function validacaoLogin() {
 
     } else {
 
-        fetch('http://localhost:3000/getData')
+        fetch('https://site-jogo.onrender.com/getData')
             .then(response => response.json())
             .then(data => {
 
@@ -95,7 +95,7 @@ function cadastrando_novo_user() {
     } else {
         sexo = sexo.value;
 
-        fetch('http://localhost:3000/getData')
+        fetch('https://site-jogo.onrender.com/getData')
             .then(response => response.json())
             .then(data => {
 
@@ -131,7 +131,7 @@ function cadastrando_novo_user() {
                         n_celular: n_celular
                     };
     
-                    fetch('http://localhost:3000/cadastrar_user', {
+                    fetch('https://site-jogo.onrender.com/cadastrar_user', {
                         method: 'POST',
                         headers: {
                             'Content-Type': 'application/json'
